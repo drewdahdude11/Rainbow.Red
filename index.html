@@ -6,20 +6,19 @@
     <title>Red</title>
     <style>
         body {
-            background-color: red;
-        }
-         h1 {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #8B0000; /* Darker red for better contrast */
             color: white;
-
+            text-align: center;
         }
 
-        h2 {
+        h1, h2 {
             color: white;
         }
 
         .navbar {
             display: flex;
-            background-color: #333;
             overflow: hidden;
         }
 
@@ -28,17 +27,43 @@
             padding: 14px 20px;
             text-align: center;
             text-decoration: none;
+            font-weight: bold;
             color: white;
-            transition: background-color 0.3s;
+            transition: transform 0.2s, filter 0.2s;
         }
 
         .navbar a:hover {
-            background-color: #575757;
+            transform: scale(1.05);
+            filter: brightness(1.2);
         }
 
+        /* Rainbow navbar colors */
+        .navbar a:nth-child(1) { background-color: #666; }        /* Home - Neutral Gray */
+        .navbar a:nth-child(2) { background-color: #FF4136; }     /* Red */
+        .navbar a:nth-child(3) { background-color: #FF851B; }     /* Orange */
+        .navbar a:nth-child(4) {
+            background-color: #FFDC00;
+            color: #000;
+        } /* Yellow */
+        .navbar a:nth-child(5) { background-color: #2ECC40; }     /* Green */
+        .navbar a:nth-child(6) { background-color: #0074D9; }     /* Blue */
+        .navbar a:nth-child(7) { background-color: #B10DC9; }     /* Purple */
+
+        .content {
+            padding: 30px;
+        }
+
+        img {
+            max-width: 300px;
+            margin: 20px;
+            border: 4px solid white;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
     </style>
 </head>
-    <body>
+
+<body>
 
     <div class="navbar">
         <a href="https://drewdahdude11.github.io/Rainbow.home/">Home</a>
@@ -48,13 +73,17 @@
         <a href="https://drewdahdude11.github.io/Rainbow.green/">Green</a>
         <a href="https://drewdahdude11.github.io/Rainbow.blue/">Blue</a>
         <a href="https://drewdahdude11.github.io/Rainbow.purple/">Purple</a>
-    
     </div>
 
-    <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAyL3Jhd3BpeGVsX29mZmljZV8yNF9hX2RyYXdpbmdfb2ZfYV9hcHBsZV9pbl90aGVfc3R5bGVfb2ZfYm9sZF9vdV84OWRhYTY0Yy1mNzU3LTRiNGMtOGFmOS1iNGY0MDIxNjMzN2UucG5n.png">
-    
-    </body>
+    <div class="content">
+        <h1>Welcome to the Red Page!</h1>
+        <h2>Red is the color of passion, fire, and energy.</h2>
 
-</head>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Red_Apple.jpg" alt="Red Apple">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Red_rose.jpg" alt="Red Rose">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Red_Lava.jpg" alt="Red Lava">
+    </div>
+
+</body>
 
 </html>
